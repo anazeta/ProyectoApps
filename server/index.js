@@ -34,9 +34,9 @@ app.post("/api/post", (req, res) => {
 });
 
 app.delete("/api/remove/:id", (req, res) => {
-    const { id } = req.body;
-    const sqlRemove = 
-    "DELETE FROM contact_db WHERE id = ?";
+    const { id } = req.params;
+
+    const sqlRemove = "DELETE FROM contact_db WHERE id = ?";
     db.query(sqlRemove, id, (error, result) => {
         if (error) {
             console.log(error);

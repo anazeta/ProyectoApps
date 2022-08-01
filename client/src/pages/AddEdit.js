@@ -68,9 +68,8 @@ const AddEdit = () => {
     };
 
     const handleInputChange = (e) => {
-        const { nombre, value } = e.target;
-        console.log(nombre, value, "handleInputChange")
-        setState({ ...state, [nombre]: value});
+        const { value } = e.target;
+        setState({ text: value});
     };
 
   return (

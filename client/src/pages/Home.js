@@ -8,20 +8,19 @@ const Home = () => {
   const [data, setData] = useState([]);
 
   const loadData = async () => {
-    const response = await axios.get("http://localhost:5000/api/get");
+    const response = await axios.get('http://localhost:5000/api/get');
     setData(response.data);
   };
 
   useEffect(() => {
     loadData();
-  }, []);
-
+  }, []); 
   
   const deleteContact = (id) => {
     if(
         window.confirm("Estas seguro de eliminar este contacto ?")
     ) {
-        axios.delete(`http://localhost:5000/api/get/${id}`);
+        axios.delete(`http://localhost:5000/api/remove/${id}`);
         toast.success("Contacto eliminado satisfactoriamente");
         setTimeout(() => loadData(), 500);
     }
@@ -30,8 +29,7 @@ const Home = () => {
     <div style={{ marginTop: "150px" }}>
         <Link to="/addContact">
             <button className="btn btn-contact">Agregar contacto</button>
-        </Link>
-        
+        </Link>  
         <table className="styled-table">
             <thead>
                 <tr>
@@ -56,10 +54,7 @@ const Home = () => {
                                 </Link>
                                 <button 
                                 className="btn btn-delete" 
-                                onClick={() => deleteContact(item.id)}
-                                >
-                                    eliminar
-                                </button>
+                                onClick={() => deleteContact(item.id)}>eliminar</button>
                                 <Link to={`/view/${item.id}`}>
                                 <button className="btn btn-view">ver</button>
                                 </Link>

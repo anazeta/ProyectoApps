@@ -1,0 +1,3 @@
+Esta app tiene la finalidad de agendar información basica de contactos o usuarios de forma ordenada.
+Asimismo, el formato le permite su adaptación para diferentes tipos de sitios web que requieran el uso de una base de datos, a fin de resguardar dicha información.
+Para la misma, se aplicó diferentes temas vistos en clases, tales como React (frontend), Node JS, Mysql (Backend). 
