@@ -25,15 +25,15 @@ const View = () => {
                 <span>{id}</span>
                 <br />
                 <br />
-                <strong>nombre: </strong>
+                <strong>NOMBRE: </strong>
                 <span>{user.nombre}</span>
                 <br />
                 <br />
-                <strong>email: </strong>
+                <strong>EMAIL: </strong>
                 <span>{user.email}</span>
                 <br />
                 <br />
-                <strong>contacto: </strong>
+                <strong>CONTACTO: </strong>
                 <span>{user.contacto}</span>
                 <br />
                 <br />

@@ -10,6 +10,8 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
+      <h1>AGENDA DE CONTACTOS</h1>
+      <p></p>
       <ToastContainer position="top-center" />
       <Routes>
         <Route exact path="/" element={<Home/>} />

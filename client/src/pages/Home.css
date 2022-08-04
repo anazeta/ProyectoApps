@@ -1,6 +1,8 @@
 body {
     height: 400px;
-    background: url(./imagen/26203-claros.jpg) no-repeat center;
+    background: url(./imagen/imag.jpg);
+    display: flexbox;
+    
 }
 
 .styled-table {
@@ -9,12 +11,14 @@ body {
     font-size: 0.9em;
     font-family: sans-serif;
     max-width: 800px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 50 0 20px rgba(14, 7, 7, 0.15);
+    font-weight: bold;
+    background: rgb(239, 250, 250);
 }
 
 .styled-table thead tr {
     background-color: rgb(10, 63, 63);
-    color: azure;
+    color: rgb(239, 250, 250);
     text-align: left;
 }
 
@@ -24,23 +28,23 @@ body {
 }
 
 .styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #0c0c0c;
 }
 
 .styled-table tbody tr:nth-of-type(even) {
-    background-color: beige;
+    background-color: #d3d373;
 }
 
 .styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid #121312;
 }
 
 .btn {
-    border: none;
+    border: none ;
     color: white;
     padding: 5px 8px;
     text-align: center;
-    text-decoration: none;
+    text-decoration: none ;
     display: inline-block;
     border-radius: 5px;
     font-size: 16px;
